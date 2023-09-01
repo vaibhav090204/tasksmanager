@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Task Manager</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header-title">Task Manager</h1>
+        <div class="sort-buttons">
+            <button class="btn-sort" onclick="sortByDueDate()">Sort by Due Date</button>
+            <button class="btn-sort" onclick="sortByCompletion()">Sort by Completion</button>
+        </div>
+    </header>
+    <main class="main-content">
+        <div class="task-container">
+            <h2 class="section-title">Your Tasks</h2>
+            <ul class="task-list" id="task-list"></ul>
+        </div>
+        <div class="form-container">
+            <h2 class="section-title">Add Task</h2>
+            <form class="task-form" id="task-form">
+                <input type="text" class="input-field" id="task-name" placeholder="Enter task name" required>
+                <input type="date" class="input-field" id="due-date" required>
+                <label for="completed" class="checkbox-label">Completed:</label>
+                <input type="checkbox" id="completed" class="checkbox-field">
+                <button type="submit" class="btn-add-task">Add Task</button>
+            </form>
+            <div class="filter-buttons">
+                <button class="btn-filter" onclick="filterTasks(true)">Completed</button>
+                <button class="btn-filter" onclick="filterTasks(false)">Incomplete</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

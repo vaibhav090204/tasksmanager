@@ -1,0 +1,263 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header Styles */
+.header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-title {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Main Content Styles */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem;
+}
+
+/* Task Container Styles */
+.task-container, .form-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 1.5rem;
+    width: calc(100% - 3rem); /* Full width on mobile */
+    box-sizing: border-box;
+}
+
+.section-title {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+/* ... (Previous CSS rules) ... */
+
+/* Task List Styles */
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-item {
+    margin-bottom: 1rem; /* Add margin between task items */
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task-item span {
+    flex: 1;
+}
+
+/* Edit and Delete Buttons within Task List */
+.edit-btn,
+.delete-btn {
+    padding: 0.25rem 0.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+    color: #333;
+    margin-right: 0.5rem; /* Add margin between Edit and Delete buttons */
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+    background-color: #e0a800;
+    color: #fff;
+}
+
+/* ... (Remaining CSS rules) ... */
+
+
+/* Form Container Styles */
+.input-field {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    color: #555;
+    transition: border-color 0.3s;
+}
+
+.input-field:focus {
+    border-color: #007bff;
+}
+
+.checkbox-label {
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.checkbox-field {
+    vertical-align: middle;
+    margin-right: 0.25rem;
+}
+
+.btn-add-task {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+}
+
+.btn-add-task:hover {
+    background-color: #218838;
+}
+
+/* Sort, Filter, and Category Buttons */
+.sort-buttons,
+.filter-buttons,
+.category-buttons {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.btn-sort,
+.btn-filter,
+.btn-category {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    margin: 0.2rem; /* Adjusted margin for a bit more space */
+    transition: background-color 0.3s;
+}
+
+.btn-sort:hover,
+.btn-filter:hover,
+.btn-category:hover {
+    background-color: #0056b3;
+}
+
+/* Priority Icons */
+.high-priority { border-color: #dc3545; }
+.medium-priority { border-color: #ffc107; }
+.low-priority { border-color: #28a745; }
+/* ... (Previous CSS rules) ... */
+
+/* Edit and Delete Buttons */
+.edit-btn,
+.delete-btn {
+    padding: 0.25rem 0.5rem;
+    margin-left: 0.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+    background-color: #e0a800;
+    color: #fff;
+}
+
+/* ... (Remaining CSS rules) ... */
+
+/* Media Query for Mobile Devices */
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+    .task-container, .form-container {
+        width: 100%;
+        margin: 1rem 0;
+        padding: 1rem; /* Add some padding to create space */
+    }
+
+    .task-item {
+        margin-bottom: 0.5rem; /* Reduce margin between task items */
+        padding: 0.5rem;
+    }
+
+    /* Adjust button sizes and spacing */
+    .btn-add-task,
+    .edit-btn,
+    .delete-btn {
+        padding: 0.5rem 1rem;
+        margin: 0.2rem;
+        font-size: 0.9rem;
+    }
+}
+/* Styling for Prompt and Confirm Dialogs */
+/* Note: These styles may not apply to all browsers due to security constraints */
+
+/* Styling for Prompt Dialog */
+.prompt {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    max-width: 80%; /* Limit width to maintain readability */
+    margin: 0 auto; /* Center the dialog horizontally */
+    text-align: center;
+}
+
+/* Styling for Confirm Dialog */
+.confirm {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    max-width: 80%; /* Limit width to maintain readability */
+    margin: 0 auto; /* Center the dialog horizontally */
+    text-align: center;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+    .prompt,
+    .confirm {
+        max-width: 90%; /* Adjust max-width for mobile view */
+    }
+}
+
